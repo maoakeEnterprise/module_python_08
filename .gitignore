@@ -3,3 +3,4 @@ analysis.png
 poetry.lock
 matrix_env
 .mypy_cache
+__pycache__
