@@ -18,12 +18,6 @@ def verif_var() -> bool:
     return True
 
 
-def is_env(key: str) -> bool:
-    if os.getenv(key):
-        return True
-    return False
-
-
 def main() -> None:
     try:
         load_dotenv()
@@ -48,7 +42,7 @@ def main() -> None:
         print("[OK]Production overrides available")
         print("\nThe Oracle sees all configurations.")
     except Exception as e:
-        print(f"Type Error : {e.__class__.__name__}")
+        print(f"Type Error : {getattr(e, 'name')}")
         print(f"Message Error: {e}")
 
 
