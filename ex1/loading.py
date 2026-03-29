@@ -2,7 +2,7 @@ from importlib import util
 
 
 class PackageError(Exception):
-    def __init__(self, mess) -> None:
+    def __init__(self, mess: str) -> None:
         super().__init__(f"PackageError: {mess}")
 
 
