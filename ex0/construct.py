@@ -3,7 +3,7 @@ import os
 import site
 
 
-def is_activate():
+def is_activate() -> bool:
     return sys.prefix != sys.base_prefix
 
 
